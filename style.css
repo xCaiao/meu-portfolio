@@ -1,0 +1,292 @@
+/* style.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(90deg, #1a1a1a, #3d0075);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2, 5em;
+  color: #00ff88; /* Novo tom de verde */
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00ff88;
+}
+
+section {
+  padding: 50px 20px;
+  border-bottom: 2px solid #3d0075;
+}
+
+.projeto {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: scale(1.05);
+}
+
+.projeto a {
+  display: inline-block;
+  background-color: #00ff88;
+  color: #0a0a0a;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.projeto a:hover {
+  background-color: #3d0075;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+#habilidades {
+  padding: 50px 20px;
+  background: linear-gradient(90deg, #1a1a1a, #3d0075);
+  color: #fff;
+}
+
+.habilidades-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.habilidade {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidade:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+}
+
+.habilidade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.habilidade.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#projetos {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.projeto {
+  background-color: rgba(255, 255, 255, 0.05); /* Fundo sutil */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 136, 0.3); /* Brilho sutil */
+  transition: transform 0.3s ease-in-out;
+}
+
+.projeto:hover {
+  transform: scale(1.02); /* Leve efeito de aumento ao passar o mouse */
+}
+
+.projeto h3 {
+  color: #00ff88;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.analise {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.analise h4 {
+  color: #00ff88; /* Verde neon */
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.analise ul {
+  list-style: none;
+  padding: 0;
+}
+
+.analise li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.7; /* Espaçamento melhorado */
+}
+
+.descrição {
+  margin-top: 5px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: 12px;
+  margin-right: auto;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+.ponto {
+  flex-shrink: 0;
+  display: flex;
+  width: 10px;
+  height: 10px;
+  background-color: #a020f0; /* Roxo */
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 6px; /* Ajuste para alinhar à linha de texto */
+}
+
+.topico {
+  color: #00ff88; /* Verde neon */
+  font-weight: bold;
+  margin-right: 5px;
+  width: 100%;
+}
+
+.texto-centralizado {
+  max-width: 800px; /* Limita a largura do texto */
+  margin: 0 auto; /* Centraliza o bloco */
+  text-align: center; /* Mantém o texto alinhado à esquerda */
+  line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px; /* Espaço para a faixa */
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px; /* Espessura da faixa */
+  background-color: #00ff88; /* Verde-neon */
+  transition: width 0.4s ease-in-out; /* Animação */
+}
+
+h2:hover::after,
+h2.selecionado::after {
+  width: 100%;
+}
+
+.linkedin-btn {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #00ff88, #a020f0); /* Verde neon + Roxo */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 255, 136, 0.5);
+  margin-top: 10px auto;
+}
+
+.linkedin-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(160, 32, 240, 0.7);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .linkedin-btn {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: block;
+    margin-top: 10px auto;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}

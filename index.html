@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio - People Analytics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+    <a href="https://www.linkedin.com/in/caio-martins-leite/" target="_blank" class="linkedin-btn">LinkedIn</a>
+      </div>
+    </header>
+    <header>
+      <h1>Meu Portfólio - Caio Martins Leite</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#procuro-vagas">Procuro Vagas</a></li>
+          <li><a href="#habilidades">Minhas Habilidades</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio">
+      <h2>Bem-vindo(a)!</h2>
+      <p>
+        Estou iniciando minha carreira na área de análise de dados e de comunicação, e para isso estruturei este site para publicar
+        meus projetos e portfólios de diferentes dashboards, com o intuito de compartilhar minhas habilidades.
+      </p>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="projeto">
+        <h3>Dashboard de Desempenho do Vendedor</h3>
+        <p>
+          Este dashboard analisa o desempenho de um representante comercial
+          fictício.
+        </p>
+        <a href="#dashboard-vendas" class="btn-dashboard">Ver Dashboard</a>
+        <h3>Dashboard de Análise de Engajamento</h3>
+        
+        <p>
+          Este dashboard analisa o engajamento dos alunos com base em KPIs de um curso de inglês fictício.
+        </p>
+        <a href="#dashboard-engajamento" class="btn-dashboard">Ver Dashboard</a>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p class="texto-centralizado">
+        Formado em Comunicação Organizacional pela Universidade Tecnológica
+        Federal do Paraná (UTFPR) - Curitiba. Sempre fui apaixonado pela
+        comunicação e tecnologia, e hoje estou me aperfeiçoando na área de
+        análise de dados, juntando os mundos da comunicação e da tecnologia.
+      </p>
+    </section>
+
+    <section id="procuro-vagas">
+      <h2>Procuro Vagas em</h2>
+      <div class="habilidades-container">
+        <div class="habilidade">
+          <h3>Analista de Marketing Júnior</h3>
+        
+        </div>
+        <div class="habilidade">
+          <h3>Analista de BI</h3>
+       
+        </div>
+        <div class="habilidade">
+          <h3>Analista de Comunicação Júnior</h3>
+          
+        </div>
+        <div class="habilidade">
+          <h3>People Analytics</h3>
+          
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+
+  <section id="habilidades">
+    <h2>Minhas Habilidades</h2>
+    <div class="habilidades-container">
+      <div class="habilidade">
+        <h3>Power BI</h3>
+        <p>Criação de dashboards interativos e análise de dados.</p>
+      </div>
+      <div class="habilidade">
+        <h3>SQL</h3>
+        <p>Consultas otimizadas para análise de banco de dados.</p>
+      </div>
+      <div class="habilidade">
+        <h3>Python</h3>
+        <p>Manipulação e visualização de dados para insights estratégicos.</p>
+      </div>
+      <div class="habilidade">
+        <h3>Excel</h3>
+        <p>Análises avançadas para tomadas de decisões.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projetos">
+    <h2>Projetos</h2>
+
+    <div class="projeto">
+      <section id="dashboards">
+        <div id="dashboard-vendas" class="dashboard">
+      <h3>Dashboard de Análise de Desempenho do Vendedor</h3>
+      <p>Este dashboard analisa o desempenho de um representante comercial de três empresas fictícias com base em KPIs.</p>
+      <iframe
+        width="800"
+        height="600"
+        src="https://app.powerbi.com/view?r=eyJrIjoiMjRkN2M1MmQtYmIyNi00YTJjLTliMmItZGFjNDA3ZWNjOGVmIiwidCI6IjI2ZjUwMmUzLTdiNTYtNDI2MS1iYTcwLTQwOWQyZmZjOWIwMSJ9"
+        frameborder="0"
+        allowfullscreen="true"
+      >
+      </iframe>
+      <div class="analise">
+        <h4>Insights</h4>
+        <ul>
+            <li><span class="ponto"></span> <strong class="topico">Faturamento Total:</strong><li class="descrição">Caracteriza o valor total das vendas do representante, somando as vendas de todas as empresas representadas.</li></li>
+            <li><span class="ponto"></span> <strong class="topico">Comissão Total:</strong><li class="descrição">Reflete a comissão total (valor recebido) do representante, mostrando seu faturamento e recompensa
+              pelo sucesso nas vendas das diferentes repesentações.</li></li>
+              <li><span class="ponto"></span> <strong class="topico">Faturamento por Representação:</strong><li class="descrição">Permite uma comparação
+                entre o desempenho de vendas para as diferentes representações, ajudando a identificar quais áreas
+                de vendas são mais rentáveis e quais necessitam mais atenção.</li></li>
+            <li><span class="ponto"></span> <strong class="topico">Comissão por Representação:</strong><li class="descrição">Acompanha a comissão gerada
+              para cada empresa representada, facilitando uma análise detalhada do
+              desempenho.</li></li>
+            <li><span class="ponto"></span> <strong class="topico">Linha do Tempo da Comissão:</strong><li class="descrição">Apresenta a evolução da
+              comissão ao longo do semestre, revelando tendências sazonais e padrões
+              de compras dos clientes.</li></li>
+              <li><span class="ponto"></span> <strong class="topico">Vendas por Região:</strong><li class="descrição">Mapeia os produtos vendidos
+                por região, destacando áreas de maior demanda e ajudando na alocação
+                estratégica de recursos e visitas.</li></li>
+            <li><span class="ponto"></span> <strong class="topico">Funil de Produtos Vendidos:</strong><li class="descrição">Identifica os produtos
+              mais vendidos, possibilitando ajustes estratégicos de vendas
+              conforme os resultados e entendendo o comportamento e necessidades
+              dos clientes.</li></li>
+        </ul>
+      </section>
+    </div>
+    
+    <section class="projeto">
+      <div id="dashboard-engajamento" class="dashboard">
+        <h3>Dashboard de Análise de Engajamento</h3>
+        <iframe
+          width="800"
+          height="600"
+          src="https://app.powerbi.com/view?r=eyJrIjoiZTQ3OGM0NzEtYjNmZi00MTAxLWI2NjctNWFmYWE4NGQ0NWQ0IiwidCI6IjI2ZjUwMmUzLTdiNTYtNDI2MS1iYTcwLTQwOWQyZmZjOWIwMSJ9"
+          frameborder="0"
+          allowfullscreen="true"
+        >
+        </iframe>
+        <div class="analise">
+          <h4>Insights</h4>
+          <ul>
+              <li><span class="ponto"></span> <strong class="topico">Status do Acesso:</strong><li class="descrição">Indica quantos alunos estão com acesso ativo ou bloqueado na plataforma. O acesso bloqueado pode indicar problemas técnicos, falta de pagamento ou desinteresse pelo curso, que pode gerar um reembolso de pagamento.</li></li>
+              <li><span class="ponto"></span> <strong class="topico">Engajamento dos Alunos:</strong><li class="descrição">Acompanha o panorama de engajamento dos alunos atuais. A presença de muitos alunos com baixo ou nenhum engajamento podem indicar que o conteúdo não está sendo atraente o suficiente, que há falta de motivação ou problemas no processo de onboarding.</li></li>
+              <li><span class="ponto"></span> <strong class="topico">Média dos Dias até o 1º Acesso:</strong><li class="descrição">Com uma média alta, é possível desconfiar de falta de motivação, falta de tempo devido a rotina corrida do setor agro ou um processo de onboarding pouco eficaz.</li></li>
+              <li><span class="ponto"></span> <strong class="topico">Taxa de Churn:</strong><li class="descrição">Uma alta taxa de churn pode indicar abandono do curso, seja por insatisfação do conteúdo ou percepção de falta de valor agregado do curso. Uma alta taxa de churn pode resultar em problemas financeiros para a empresa.</li></li>
+                <li><span class="ponto"></span> <strong class="topico">Compras por Mês:</strong><li class="descrição">É possível identificar tendências de compra ao longo do tempo, ajudando na tomada de decisão sobre o ciclo de vida do produto. Os dados apresentam maior procura nos períodos de junho e janeiro, o que pode indicar maior busca no período de férias, assim como possíveis metas de início de ano. </li></li>
+            
+          </ul>
+      </div>
+  </section>
+</html>
