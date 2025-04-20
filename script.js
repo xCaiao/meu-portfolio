@@ -13,14 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.addEventListener("scroll", mostrarHabilidades);
-  mostrarHabilidades(); // Para exibir as habilidades se já estiverem na tela
+  mostrarHabilidades();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
 
   function highlightSection() {
-    let scrollPosition = window.scrollY + 150; // Ajuste para ativação antes do topo
+    let scrollPosition = window.scrollY + 150;
     sections.forEach((section) => {
       let top = section.offsetTop;
       let bottom = top + section.offsetHeight;
